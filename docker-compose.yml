@@ -1,0 +1,30 @@
+services:
+
+  POC.API:
+    build:
+      context: ./POC.API
+      dockerfile: Dockerfile
+    container_name: POC.API-api
+    ports:
+      - "5000:8080"
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  postgres:
+    image: postgres:16
+    container_name: POC-postgres
+    environment:
+      POSTGRES_DB: POCdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7
+    container_name: POC-redis
+    ports:
+      - "6379:6379"
