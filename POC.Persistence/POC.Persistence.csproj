@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\POC.Domain\POC.Domain.csproj" />
+    <ProjectReference Include="..\POC.Application\POC.Application.csproj" />
   </ItemGroup>
 
 </Project>

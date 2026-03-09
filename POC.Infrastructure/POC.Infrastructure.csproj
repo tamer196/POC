@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\POC.Application\POC.Application.csproj" />
+    <ProjectReference Include="..\POC.Persistence\POC.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

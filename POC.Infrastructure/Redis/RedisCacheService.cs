@@ -20,14 +20,17 @@ namespace POC.Infrastructure.Redis
             if (value.IsNullOrEmpty)
                 return default;
 
-            return JsonSerializer.Deserialize<T>(value!);
+            return JsonSerializer.Deserialize<T>(value!, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
         }
 
         public async Task SetAsync<T>(string key, T value, TimeSpan? expiry = null)
         {
             var json = JsonSerializer.Serialize(value);
 
-            await _db.StringSetAsync(key, json, (Expiration)expiry);
+            await _db.StringSetAsync(key, json, expiry ?? TimeSpan.FromMinutes(10));
         }
 
         public async Task RemoveAsync(string key)

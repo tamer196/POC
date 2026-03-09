@@ -7,6 +7,7 @@ namespace POC.API.Controllers.Users
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class UsersController : ControllerBase
     {
         private readonly IMediator _mediator;

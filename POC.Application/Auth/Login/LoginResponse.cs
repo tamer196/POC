@@ -1,4 +1,6 @@
-﻿namespace POC.Application.Auth.Login
+﻿using POC.Domain.Enums;
+
+namespace POC.Application.Auth.Login
 {
     public class LoginResponse
     {

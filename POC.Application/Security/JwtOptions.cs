@@ -1,4 +1,4 @@
-﻿namespace POC.Persistence.Security
+﻿namespace POC.Application.Security
 {
     public class JwtOptions
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using POC.Application.Security;
 using POC.Application.Services;
 using POC.Domain.Entities;
 using POC.Persistence;
-using POC.Persistence.Security;
 
 namespace POC.Infrastructure.Services
 {
@@ -23,17 +23,17 @@ namespace POC.Infrastructure.Services
             _jwtOptions = jwtOptions.Value;
         }
 
-        public async Task<RefreshToken> CreateAsync(AppUser user, string accessTokenJti)
+        public async Task<RefreshToken> CreateAsync(User user, string accessTokenJti)
         {
-            var refreshToken = new RefreshToken
-            {
-                UserId = user.Id,
-                Token = _jwtService.GenerateRefreshToken(),
-                AccessTokenJti = accessTokenJti,
-                ExpiresAtUtc = DateTime.UtcNow.AddDays(_jwtOptions.RefreshTokenDays)
-            };
+            var refreshToken = new RefreshToken(
+                _jwtService.GenerateRefreshToken(),
+                DateTime.UtcNow.AddDays(_jwtOptions.RefreshTokenDays),
+                accessTokenJti,
+                user.Id
+            );
 
             _dbContext.RefreshTokens.Add(refreshToken);
+
             await _dbContext.SaveChangesAsync();
 
             return refreshToken;
@@ -45,8 +45,7 @@ namespace POC.Infrastructure.Services
                 .Include(x => x.User)
                 .FirstOrDefaultAsync(x =>
                     x.Token == token &&
-                    !x.IsRevoked &&
-                    x.ExpiresAtUtc > DateTime.UtcNow);
+                    x.IsActive);
         }
 
         public async Task RevokeAsync(string token)
@@ -57,8 +56,7 @@ namespace POC.Infrastructure.Services
             if (refreshToken is null)
                 return;
 
-            refreshToken.IsRevoked = true;
-            refreshToken.RevokedAtUtc = DateTime.UtcNow;
+            refreshToken.Revoke();
 
             await _dbContext.SaveChangesAsync();
         }

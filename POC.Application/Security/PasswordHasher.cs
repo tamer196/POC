@@ -1,4 +1,6 @@
-﻿namespace POC.Persistence.Security
+﻿using BCrypt.Net;
+
+namespace POC.Application.Security
 {
     public static class PasswordHasher
     {

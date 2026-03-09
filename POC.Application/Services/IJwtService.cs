@@ -4,7 +4,7 @@ namespace POC.Application.Services
 {
     public interface IJwtService
     {
-        string GenerateAccessToken(AppUser user, string jti);
+        string GenerateAccessToken(User user, string jti);
         string GenerateRefreshToken();
     }
 }

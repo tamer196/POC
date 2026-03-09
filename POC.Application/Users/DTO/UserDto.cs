@@ -1,4 +1,6 @@
-﻿namespace POC.Application.Users.DTO
+﻿using POC.Domain.Enums;
+
+namespace POC.Application.Users.DTO
 {
     public class UserDto
     {
