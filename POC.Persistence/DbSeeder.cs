@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using POC.Application.Security;
 using POC.Domain.Entities;
 using POC.Domain.Enums;
-using POC.Persistence.Security;
 
 namespace POC.Persistence
 {
@@ -17,36 +17,12 @@ namespace POC.Persistence
             if (await dbContext.Users.AnyAsync())
                 return;
 
-            var users = new List<AppUser>
-        {
-            new AppUser
+            var users = new List<User>
             {
-                Id = Guid.NewGuid(),
-                UserName = "admin",
-                Email = "admin@test.com",
-                PasswordHash = PasswordHasher.Hash("Admin@123"),
-                Role = AppRole.Admin,
-                IsActive = true
-            },
-            new AppUser
-            {
-                Id = Guid.NewGuid(),
-                UserName = "manager",
-                Email = "manager@test.com",
-                PasswordHash = PasswordHasher.Hash("Manager@123"),
-                Role = AppRole.Manager,
-                IsActive = true
-            },
-            new AppUser
-            {
-                Id = Guid.NewGuid(),
-                UserName = "user",
-                Email = "user@test.com",
-                PasswordHash = PasswordHasher.Hash("User@123"),
-                Role = AppRole.User,
-                IsActive = true
-            }
-        };
+                new User("admin", "admin@test.com", PasswordHasher.Hash("Admin@123"), UserRole.Admin),
+                new User("manager", "manager@test.com", PasswordHasher.Hash("Manager@123"), UserRole.Manager),
+                new User("user", "user@test.com", PasswordHasher.Hash("User@123"), UserRole.User)
+            };
 
             dbContext.Users.AddRange(users);
             await dbContext.SaveChangesAsync();

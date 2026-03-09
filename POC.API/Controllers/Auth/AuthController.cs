@@ -1,13 +1,15 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using POC.Application.Auth.Login;
 using POC.Application.Auth.Logout;
 using POC.Application.Auth.Refresh;
 using POC.Application.Redis;
+using POC.Application.Security;
 using POC.Application.Services;
 using POC.Persistence;
-using POC.Persistence.Security;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace POC.API.Controllers.Auth
@@ -16,20 +18,20 @@ namespace POC.API.Controllers.Auth
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly AppDbContext _dbContext;
+        private readonly IMediator _mediator;
         private readonly IJwtService _jwtService;
         private readonly IRefreshTokenService _refreshTokenService;
         private readonly ITokenBlocklistService _tokenBlocklistService;
         private readonly IConfiguration _configuration;
 
         public AuthController(
-            AppDbContext dbContext,
+            IMediator mediator,
             IJwtService jwtService,
             IRefreshTokenService refreshTokenService,
             ITokenBlocklistService tokenBlocklistService,
             IConfiguration configuration)
         {
-            _dbContext = dbContext;
+            _mediator = mediator;
             _jwtService = jwtService;
             _refreshTokenService = refreshTokenService;
             _tokenBlocklistService = tokenBlocklistService;
@@ -38,25 +40,11 @@ namespace POC.API.Controllers.Auth
 
         [HttpPost("login")]
         [AllowAnonymous]
-        public async Task<IActionResult> Login([FromBody] LoginRequest request)
+        public async Task<IActionResult> Login(LoginCommand request)
         {
-            var user = await _dbContext.Users
-                .FirstOrDefaultAsync(x => x.UserName == request.UserName && x.IsActive);
+            var result = await _mediator.Send(new LoginCommand(request.UserName, request.Password));
 
-            if (user is null || !PasswordHasher.Verify(request.Password, user.PasswordHash))
-                return Unauthorized(new { message = "Invalid username or password." });
-
-            var jti = Guid.NewGuid().ToString();
-            var accessToken = _jwtService.GenerateAccessToken(user, jti);
-            var refreshToken = await _refreshTokenService.CreateAsync(user, jti);
-
-            return Ok(new LoginResponse
-            {
-                AccessToken = accessToken,
-                RefreshToken = refreshToken.Token,
-                UserName = user.UserName,
-                Role = user.Role
-            });
+            return Ok(result);
         }
 
         [HttpPost("refresh")]

@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using POC.Application.Security;
 using POC.Application.Services;
 using POC.Domain.Entities;
-using POC.Persistence.Security;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -18,7 +18,7 @@ namespace POC.Infrastructure.Services
             _jwtOptions = jwtOptions.Value;
         }
 
-        public string GenerateAccessToken(AppUser user, string jti)
+        public string GenerateAccessToken(User user, string jti)
         {
             var claims = new List<Claim>
         {
@@ -28,7 +28,7 @@ namespace POC.Infrastructure.Services
             new(JwtRegisteredClaimNames.Jti, jti),
             new(ClaimTypes.Name, user.UserName),
             new(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new(ClaimTypes.Role, user.Role)
+            new(ClaimTypes.Role, user.Role.ToString())
         };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtOptions.Key));
