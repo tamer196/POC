@@ -416,3 +416,31 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Rider
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# Secrets
+appsettings.Development.json
+appsettings.Local.json
+
+# Logs
+*.log
+
+# Docker
+docker-compose.override.yml
+
+# ASP.NET Scaffolding
+Areas/**/Generated/
+
+# Test coverage
+coverage/
+TestResults/
