@@ -1,17 +1,47 @@
-name: dockercompose7523742551652887461
+name: dockercompose6499372220589788543
 services:
+  mongo:
+    container_name: poc-mongo
+    image: mongo:7
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 27017
+        published: "27017"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: volume
+        source: mongo-data
+        target: /data/db
+        volume: {}
   poc.api:
     build:
-      context: C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC
+      context: C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks
       dockerfile: POC.API/Dockerfile
+    container_name: poc-api
+    depends_on:
+      mongo:
+        condition: service_started
+        required: true
+      postgres:
+        condition: service_started
+        required: true
+      redis:
+        condition: service_started
+        required: true
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
-    image: pocapi
     networks:
       default: null
     ports:
+      - mode: ingress
+        target: 8080
+        published: "5000"
+        protocol: tcp
       - mode: ingress
         target: 8080
         protocol: tcp
@@ -39,6 +69,42 @@ services:
         target: /root/.aspnet/https
         read_only: true
         bind: {}
+  postgres:
+    container_name: poc-postgres
+    environment:
+      POSTGRES_DB: POCdb
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    image: postgres:16
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5432"
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: volume
+        source: postgres-data
+        target: /var/lib/postgresql/data
+        volume: {}
+  redis:
+    container_name: poc-redis
+    image: redis:7
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+    restart: always
 networks:
   default:
-    name: dockercompose7523742551652887461_default
+    name: dockercompose6499372220589788543_default
+volumes:
+  mongo-data:
+    name: dockercompose6499372220589788543_mongo-data
+  postgres-data:
+    name: dockercompose6499372220589788543_postgres-data

@@ -3,4 +3,8 @@
     <Build />
   </Project>
   <Project Path="POC.API/POC.API.csproj" />
+  <Project Path="POC.Application/POC.Application.csproj" Id="8a529763-f081-443a-84a4-d7f29ed81c39" />
+  <Project Path="POC.Domain/POC.Domain.csproj" Id="a10b987a-fd69-49e1-9f80-e27479ec0a44" />
+  <Project Path="POC.Infrastructure/POC.Infrastructure.csproj" Id="09525ba6-1ba9-46e0-81e6-60f8d67a2393" />
+  <Project Path="POC.Persistence/POC.Persistence.csproj" Id="8c8db8ff-2d42-4fe3-901e-b7bab3100292" />
 </Solution>

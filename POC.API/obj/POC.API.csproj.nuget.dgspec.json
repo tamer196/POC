@@ -1,17 +1,191 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\POC\\POC\\POC.API\\POC.API.csproj": {}
+    "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.API\\POC.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\POC\\POC\\POC.API\\POC.API.csproj": {
+    "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.API\\POC.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\POC\\POC\\POC.API\\POC.API.csproj",
+        "projectUniqueName": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.API\\POC.API.csproj",
         "projectName": "POC.API",
-        "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\POC\\POC\\POC.API\\POC.API.csproj",
+        "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.API\\POC.API.csproj",
         "packagesPath": "C:\\Users\\TamerShama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\POC\\POC\\POC.API\\obj\\",
+        "outputPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TamerShama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Infrastructure\\POC.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Infrastructure\\POC.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.23.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Application\\POC.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Application\\POC.Application.csproj",
+        "projectName": "POC.Application",
+        "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Application\\POC.Application.csproj",
+        "packagesPath": "C:\\Users\\TamerShama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TamerShama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Domain\\POC.Domain.csproj": {
+                "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Domain\\POC.Domain.csproj"
+              },
+              "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Persistence\\POC.Persistence.csproj": {
+                "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Persistence\\POC.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Domain\\POC.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Domain\\POC.Domain.csproj",
+        "projectName": "POC.Domain",
+        "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Domain\\POC.Domain.csproj",
+        "packagesPath": "C:\\Users\\TamerShama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,58 +224,84 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Infrastructure\\POC.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Infrastructure\\POC.Infrastructure.csproj",
+        "projectName": "POC.Infrastructure",
+        "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Infrastructure\\POC.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\TamerShama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TamerShama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Application\\POC.Application.csproj": {
+                "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Application\\POC.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.1.0, )"
             },
-            "MediatR": {
-              "target": "Package",
-              "version": "[14.1.0, )"
-            },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[11.1.0, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[9.0.13, )"
-            },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[9.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.13, )"
-            },
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
-              "target": "Package",
-              "version": "[1.23.0, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[9.0.4, )"
-            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.11.8, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[9.0.6, )"
             }
           },
           "imports": [
@@ -116,9 +316,106 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Persistence\\POC.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Persistence\\POC.Persistence.csproj",
+        "projectName": "POC.Persistence",
+        "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Persistence\\POC.Persistence.csproj",
+        "packagesPath": "C:\\Users\\TamerShama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TamerShama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Domain\\POC.Domain.csproj": {
+                "projectPath": "C:\\Users\\TamerShama\\OneDrive - Ingot Brokers\\Desktop\\Tasks\\POC.Domain\\POC.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

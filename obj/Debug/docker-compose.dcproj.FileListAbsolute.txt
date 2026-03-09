@@ -1,44 +1,104 @@
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\POC.API.deps.json
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\POC.API.runtimeconfig.json
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\appsettings.Development.json
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\appsettings.json
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\POC.API.staticwebassets.endpoints.json
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\POC.API.exe
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\POC.API.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.OpenApi.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.EntityFrameworkCore.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\StackExchange.Redis.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.Extensions.Options.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.IdentityModel.Tokens.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\BCrypt.Net-Next.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.Extensions.Logging.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Pipelines.Sockets.Unofficial.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\System.IO.Hashing.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.Extensions.Primitives.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.IdentityModel.Protocols.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.IdentityModel.Logging.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\Npgsql.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\POC.API.pdb
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\obj\Debug\docker-c.35A3FFBA.Up2Date
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\MediatR.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\MediatR.Contracts.dll
-C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\POC\POC\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.API.deps.json
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.API.runtimeconfig.json
+C:\Users\TamerShama\source\repos\POC\bin\Debug\appsettings.Development.json
+C:\Users\TamerShama\source\repos\POC\bin\Debug\appsettings.json
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.API.staticwebassets.endpoints.json
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.API.exe
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.API.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.Persistence.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\MediatR.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\StackExchange.Redis.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.Application.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.Domain.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.Infrastructure.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\MediatR.Contracts.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\System.IO.Hashing.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Npgsql.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.API.pdb
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.Persistence.pdb
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.Application.pdb
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.Domain.pdb
+C:\Users\TamerShama\source\repos\POC\bin\Debug\POC.Infrastructure.pdb
+C:\Users\TamerShama\source\repos\POC\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\TamerShama\source\repos\POC\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\TamerShama\source\repos\POC\obj\Debug\docker-c.35A3FFBA.Up2Date
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\appsettings.Development.json
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\appsettings.json
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.API.staticwebassets.endpoints.json
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.API.deps.json
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.API.runtimeconfig.json
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.API.exe
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.API.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.Persistence.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\MediatR.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\StackExchange.Redis.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.Application.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.Domain.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.Infrastructure.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\MediatR.Contracts.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\System.IO.Hashing.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Npgsql.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.API.pdb
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.Persistence.pdb
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.Application.pdb
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.Domain.pdb
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\bin\Debug\POC.Infrastructure.pdb
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\obj\Debug\docker-c.35A3FFBA.Up2Date

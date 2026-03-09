@@ -11,11 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("52b108ca-8481-462a-bd14-3ddd0cff4d74")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("997fa8da-3abf-4daa-884a-028fbb3eb347")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("POC.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a9a53e0a78a442d2a84b6288c6935c65fbdac02")]
 [assembly: System.Reflection.AssemblyProductAttribute("POC.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("POC.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

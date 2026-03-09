@@ -1,4 +1,4 @@
-﻿using POC.API.Infrastructure.Redis;
+﻿using POC.Application.Redis;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace POC.API.Middleware
