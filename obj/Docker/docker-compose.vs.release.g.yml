@@ -1,5 +1,5 @@
 services:
-  POC.API:
+  poc.api:
     build:
       args:
         LAUNCHING_FROM_VS: true

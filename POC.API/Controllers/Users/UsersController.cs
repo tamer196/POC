@@ -1,0 +1,27 @@
+﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using POC.Application.Users.Queries;
+
+namespace POC.API.Controllers.Users
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UsersController : ControllerBase
+    {
+        private readonly IMediator _mediator;
+
+        public UsersController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var users = await _mediator.Send(new GetAllUsersQuery());
+
+            return Ok(users);
+        }
+    }
+}
