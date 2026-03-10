@@ -171,6 +171,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[9.0.13, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[3.7.0, )"
             }
           },
           "imports": [
@@ -313,6 +317,14 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.7.0, )"
             },
             "StackExchange.Redis": {
               "target": "Package",

@@ -234,3 +234,9 @@ C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\obj\Debug\net
 C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\obj\Debug\net9.0\POC.API.pdb
 C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\obj\Debug\net9.0\POC.API.genruntimeconfig.cache
 C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\obj\Debug\net9.0\ref\POC.API.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\bin\Debug\net9.0\DnsClient.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\bin\Debug\net9.0\Snappier.dll
+C:\Users\TamerShama\OneDrive - Ingot Brokers\Desktop\Tasks\POC.API\bin\Debug\net9.0\ZstdSharp.dll

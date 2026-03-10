@@ -1,15 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using POC.Application.Auth.Login;
 using POC.Application.Auth.Logout;
 using POC.Application.Auth.Refresh;
 using POC.Application.Redis;
-using POC.Application.Security;
 using POC.Application.Services;
-using POC.Persistence;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace POC.API.Controllers.Auth
@@ -47,8 +43,9 @@ namespace POC.API.Controllers.Auth
             return Ok(result);
         }
 
+
+        [Authorize]
         [HttpPost("refresh")]
-        [AllowAnonymous]
         public async Task<IActionResult> Refresh([FromBody] RefreshTokenRequest request)
         {
             var existingRefreshToken = await _refreshTokenService.GetValidTokenAsync(request.RefreshToken);
