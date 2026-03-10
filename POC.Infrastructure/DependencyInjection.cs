@@ -1,7 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using POC.Application.Journal.Interfaces;
 using POC.Application.Redis;
 using POC.Application.Services;
+using POC.Infrastructure.Mongo;
+using POC.Infrastructure.Mongo.Repositories;
 using POC.Infrastructure.Redis;
 using POC.Infrastructure.Services;
 using StackExchange.Redis;
@@ -30,6 +33,9 @@ namespace POC.Infrastructure
 
                 return ConnectionMultiplexer.Connect(options);
             });
+            services.Configure<MongoSettings>(configuration.GetSection("MongoDb"));
+            services.AddSingleton<MongoDbContext>();
+            services.AddScoped<IJournalRepository, JournalRepository>();
 
             return services;
         }

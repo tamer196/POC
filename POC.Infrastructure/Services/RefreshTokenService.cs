@@ -45,7 +45,8 @@ namespace POC.Infrastructure.Services
                 .Include(x => x.User)
                 .FirstOrDefaultAsync(x =>
                     x.Token == token &&
-                    x.IsActive);
+                    !x.IsRevoked &&
+                    x.ExpiresAtUtc > DateTime.UtcNow);
         }
 
         public async Task RevokeAsync(string token)

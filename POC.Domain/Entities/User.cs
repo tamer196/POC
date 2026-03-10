@@ -24,11 +24,25 @@ namespace POC.Domain.Entities
             PasswordHash = hash;
         }
 
+        public void UpdateUsername(string username)
+        {
+            UserName = username;
+        }
+
+        public void UpdateEmail(string email)
+        {
+            Email = email;
+        }
+
+        public void UpdateRole(UserRole role)
+        {
+            Role = role;
+        }
+
         public void AddRefreshToken(RefreshToken token)
         {
             _refreshTokens.Add(token);
         }
-
 
         private User() { }
 
