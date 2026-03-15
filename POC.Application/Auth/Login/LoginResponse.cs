@@ -4,9 +4,16 @@ namespace POC.Application.Auth.Login
 {
     public class LoginResponse
     {
-        public string AccessToken { get; set; } = default!;
-        public string RefreshToken { get; set; } = default!;
-        public string UserName { get; set; } = default!;
-        public string Role { get; set; } = default!;
+        public bool Success { get; set; }
+
+        public string? AccessToken { get; set; }
+
+        public string? RefreshToken { get; set; }
+
+        public string? UserName { get; set; }
+
+        public string? Role { get; set; }
+
+        public string? Error { get; set; }
     }
 }

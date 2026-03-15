@@ -14,6 +14,11 @@ namespace POC.Domain.Entities
 
         private readonly List<RefreshToken> _refreshTokens = new();
         public IReadOnlyCollection<RefreshToken> RefreshTokens => _refreshTokens;
+        private readonly List<PurchaseOrder> _purchaseOrders = new();
+        public IReadOnlyCollection<PurchaseOrder> PurchaseOrders => _purchaseOrders;
+
+        private readonly List<SalesOrder> _salesOrders = new();
+        public IReadOnlyCollection<SalesOrder> SalesOrders => _salesOrders;
 
         public void Deactivate() => IsActive = false;
 

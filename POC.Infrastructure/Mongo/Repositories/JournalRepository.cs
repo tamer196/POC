@@ -2,6 +2,7 @@
 using POC.Application.Journal.DTOs;
 using POC.Application.Journal.Interfaces;
 using POC.Infrastructure.Mongo.Entities;
+using SharpCompress.Common;
 
 namespace POC.Infrastructure.Mongo.Repositories
 {
@@ -24,7 +25,11 @@ namespace POC.Infrastructure.Mongo.Repositories
                 Endpoint = entry.Endpoint,
                 Method = entry.Method,
                 IpAddress = entry.IpAddress,
-                Timestamp = entry.Timestamp
+                Timestamp = entry.Timestamp,
+                Entity = entry.Entity,
+                EntityId = entry.EntityId,
+                OldValues = entry.OldValues,
+                NewValues = entry.NewValues
             });
         }
 
@@ -69,7 +74,12 @@ namespace POC.Infrastructure.Mongo.Repositories
                 Endpoint = x.Endpoint,
                 Method = x.Method,
                 IpAddress = x.IpAddress,
-                Timestamp = x.Timestamp
+                Timestamp = x.Timestamp,
+                Entity = x.Entity,
+                EntityId = x.EntityId,
+                OldValues = x.OldValues,
+                NewValues = x.NewValues
+
             }).ToList();
         }
     }

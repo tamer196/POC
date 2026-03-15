@@ -1,9 +1,11 @@
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using POC.API.Middleware;
 using POC.Application;
+using POC.Application.Common;
 using POC.Application.Security;
 using POC.Application.Users.Queries;
 using POC.Infrastructure;
@@ -23,6 +25,9 @@ builder.Services.AddControllers();
 
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddTransient(
+    typeof(IPipelineBehavior<,>),
+    typeof(ValidationBehavior<,>));
 
 builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyMarker).Assembly));
@@ -83,6 +88,8 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 

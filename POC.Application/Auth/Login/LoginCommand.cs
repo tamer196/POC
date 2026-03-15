@@ -33,7 +33,14 @@ namespace POC.Application.Auth.Login
                 cancellationToken);
 
             if (user is null || !PasswordHasher.Verify(request.Password, user.PasswordHash))
-                throw new UnauthorizedAccessException("Invalid credentials");
+            {
+                return new LoginResponse
+                {
+                    Success = false,
+                    UserName = request.UserName,
+                    Error = "Invalid username or password"
+                };
+            }
 
             var jti = Guid.NewGuid().ToString();
 
@@ -43,6 +50,7 @@ namespace POC.Application.Auth.Login
 
             return new LoginResponse
             {
+                Success = true,
                 AccessToken = accessToken,
                 RefreshToken = refreshToken.Token,
                 UserName = user.UserName,
