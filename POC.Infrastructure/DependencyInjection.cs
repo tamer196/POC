@@ -3,8 +3,10 @@ using Microsoft.Extensions.DependencyInjection;
 using POC.Application.Journal.Interfaces;
 using POC.Application.Redis;
 using POC.Application.Services;
+using POC.Infrastructure.Kafka;
 using POC.Infrastructure.Mongo;
 using POC.Infrastructure.Mongo.Repositories;
+using POC.Infrastructure.Presence;
 using POC.Infrastructure.Redis;
 using POC.Infrastructure.Services;
 using StackExchange.Redis;
@@ -36,6 +38,9 @@ namespace POC.Infrastructure
             services.Configure<MongoSettings>(configuration.GetSection("MongoDb"));
             services.AddSingleton<MongoDbContext>();
             services.AddScoped<IJournalRepository, JournalRepository>();
+            services.Configure<KafkaOptions>(configuration.GetSection(KafkaOptions.SectionName));
+            services.AddSingleton<IOnlineUserStore, InMemoryOnlineUserStore>();
+            services.AddHostedService<KafkaConsumerBackgroundService>();
 
             return services;
         }
