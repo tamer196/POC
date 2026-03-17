@@ -28,6 +28,11 @@ namespace POC.API.Middleware
                 await _next(context);
                 return;
             }
+            if (context.Request.Path.StartsWithSegments("/hubs"))
+            {
+                await _next(context);
+                return;
+            }
 
             var httpMethod = context.Request.Method;
 

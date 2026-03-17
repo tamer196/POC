@@ -3,11 +3,13 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using POC.API.Hubs;
 using POC.API.Middleware;
+using POC.API.Services;
 using POC.Application;
 using POC.Application.Common;
+using POC.Application.Notification.UserActivity;
 using POC.Application.Security;
-using POC.Application.Users.Queries;
 using POC.Infrastructure;
 using POC.Persistence;
 using System.Text;
@@ -31,6 +33,18 @@ builder.Services.AddTransient(
 
 builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyMarker).Assembly));
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowClient", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:5500", "http://127.0.0.1:5500")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
+});
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
@@ -90,21 +104,25 @@ builder.Services.AddSwaggerGen(options =>
 
 
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddSingleton<IUserActivityNotifier, UserActivityNotifier>();
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-
+app.UseCors("AllowClient");
 app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseAuthentication();
 app.UseMiddleware<TokenValidationMiddleware>();
 app.UseAuthorization();
+
 app.UseMiddleware<ApiJournalMiddleware>();
 
 app.MapControllers();
+app.MapHub<UserActivityHub>("/hubs/user-activity");
 
 using (var scope = app.Services.CreateScope())
 {
@@ -115,5 +133,4 @@ using (var scope = app.Services.CreateScope())
     await db.Database.MigrateAsync();
     await DbSeeder.SeedAsync(services);
 }
-
 app.Run();

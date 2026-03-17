@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "POC.KafkaProducer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
